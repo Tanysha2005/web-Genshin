@@ -1,0 +1,248 @@
+main {
+    border-style: double;
+    background-color: rgb(186, 241, 228);
+    border-color: #d6f18adf;
+}
+
+.image {
+    border-radius: 10%;
+    height: auto;
+}
+
+.wrapper-title {
+    padding: 5px 20px 5px 20px;
+}
+
+.wrapper-title p {
+    font-size: 20px;
+}
+
+nav {
+    display: block;
+    border-style: groove;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #098e93;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: rgb(18, 1, 20);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(59, 20, 165);
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(140, 30, 242);
+    align-items: center;
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+    font-style: normal;
+}
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(68, 56, 242);
+    text-align: left;
+    font-weight: normal;
+    font-style: italic;
+    align-self: flex-start;
+}
+
+#plot {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border-style: dashed;
+    border-color: #2970dbdf;
+    margin: 15pt;
+    padding: 5px 15px 5px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-basis: auto;
+}
+
+#characters {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border-style: dashed;
+    border-color: #2970dbdf;
+    margin: 15pt;
+    padding: 5px 15px 5px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-basis: auto;
+}
+
+.characters-header {
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+}
+
+.wrapper-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.wrapper-block_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+#events {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border-style: dashed;
+    border-color: #2970dbdf;
+    margin: 15pt;
+    padding: 5px 15px 5px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-basis: auto;
+}
+
+#banners {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border-style: dashed;
+    border-color: #2970dbdf;
+    margin: 15pt;
+    padding: 5px 15px 5px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-basis: auto;
+}
+
+img {
+    margin-right: 70px;
+    margin-left: 15px;
+    border: 2px solid #2a2deb93;
+    padding: 15px;
+    background: #93c3df;
+    margin-bottom: 10px;
+    width: 400px;
+    height: 300px;
+}
+
+@media (max-width: 500px) {
+    img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+}
+
+footer {
+    margin: 1px;
+    text-align: center;
+    border-style: dashed;
+    border-color: #2970dbdf;
+    background-color: rgb(186, 241, 228);
+}
+
+dl {
+    counter-reset: item;
+}
+
+
+
+
+
+dl dt::before {
+    content: counter(item) ". ";
+    counter-increment: item;
+}
+
+@media (max-width: 600px) {
+    #His {
+        font-size: 16px;
+        margin: 10pt;
+        padding: 5px 10px;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    #room {
+        font-size: 16px;
+        margin: 10pt;
+        padding: 5px 10px;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    #conditions {
+        font-size: 16px;
+        margin: 10pt;
+        padding: 5px 10px;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    #stud {
+        font-size: 16px;
+        margin: 10pt;
+        padding: 5px 10px;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .image {
+        width: 70%;
+    }
+}
+
+@media (max-width: 767px) {
+    nav {
+        display: block;
+        border-style: none;
+    }
+
+    ul {
+        background-color: #c2ebf9;
+    }
+
+    li {
+        float: none;
+        display: block;
+    }
+
+    li a {
+        padding: 10px 12px;
+    }
+}
